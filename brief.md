@@ -38,3 +38,32 @@ mobile applications. it is used as a benchmark to verify mobile security by stru
 vulnerability assessments, and penetration testing, ensuring robust defenses against reverse-engineering and data leakage.
 
 resource: evaluating mobile banking application security posture using the owasp’s masvs framework - https://dl.acm.org/doi/abs/10.1145/3588001.3609367
+
+research:
+
+##networking
+
+bgp route hijacking occurs when a malicious autonomous system (as) falsely advertises ip prefixes, steering global traffic to its network
+via longest prefix matching. rpki mitigates this by utilizing cryptographically signed route origin authorizations (roas) to drop unauthorized announcements.
+however, rpki does not protect against as-path manipulation; if an attacker falsifies the path while preserving the legitimate origin as, 
+the invalid route is still accepted.
+
+resource: rpki for beginners: how to secure your ip blocks from bgp hijacking -https://ipbnb.com/blog/rpki-bgp-hijacking-prevention#what-is-rpki 
+
+##cybersecurity
+
+log4shell was a critical remote code execution vulnerability in apache's log4j logging utility. it was rated a maximum 10.0 severity score
+because it allowed unauthenticated attackers to execute arbitrary code simply by submitting a malicious string via jndi lookups. 
+the security flaw was fixed by disabling jndi message lookups by default in log4j 2.15.0 and completely removing the vulnerable jndi ldap lookup functionality 
+in version 2.16.0.
+
+resource: log4shell rce vulnerability- https://digital.nhs.uk/cyber-alerts/2021/cc-3989 
+
+##data
+
+a software bill of materials (sbom) is a structured inventory listing all components, libraries, and dependencies within a software product.
+to ensure transparency and supply chain security, it must contain seven minimum data fields: supplier name, component name, version of the component,
+other unique identifiers, dependency relationship, author of sbom data, and timestamp. this metadata allows organization tracking of vulnerabilities.
+
+resource: what is a software bill of materials (sbom) - https://www.ibm.com/think/topics/sbom 
+
