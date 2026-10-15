@@ -67,3 +67,21 @@ other unique identifiers, dependency relationship, author of sbom data, and time
 
 resource: what is a software bill of materials (sbom) - https://www.ibm.com/think/topics/sbom 
 
+analysis:
+
+##misconception 
+
+many mobile developers believe that securing an application only requires transport-layer encryption (https/tls). they falsely assume standard os sandboxing, like android storage parameters or ios data protection, fully immunizes local assets against runtime interception.
+
+##correct version
+
+local storage is highly susceptible to root extraction, reverse-engineering, and physical memory dumps. relying solely on platform isolation fails when devices are jailbroken or compromised by exploits; thus, application-layer encryption backed by hardware keychains (android keystore/ios keychain) is mandatory.
+
+##open question
+
+i would verify how to use automated tools to quickly scan mobile apps for hidden security flaws. additionally, i plan to learn how developers protect apps
+from modern hacking tools that try to steal data from device memory, ensuring my application keeps user information completely safe.
+
+
+resource:  masvs-storage: storage - https://mas.owasp.org/masvs/05-masvs-storage/ 
+
